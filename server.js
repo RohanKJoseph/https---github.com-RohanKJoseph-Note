@@ -39,7 +39,7 @@ app.get('/api/notes', async (req, res) => {
     }   
 });
 
-app.post('api/notes', async (req , res)=>{
+app.post('/api/notes', async (req , res)=>{
     try{
         const note = new Note({
         title : req.body.title,
